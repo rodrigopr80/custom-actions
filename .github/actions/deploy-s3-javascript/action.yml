@@ -2,6 +2,7 @@ name: 'Deploy to AWS S3'
 description: 'Deploy a website to AWS S3'
 runs:
   using: 'node24'
+  main: 'main.js'
   steps:
     - name: Deploy to S3
       uses: jakejarvis/s3-sync-action@v0.5.1
